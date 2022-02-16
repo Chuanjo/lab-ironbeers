@@ -25,6 +25,7 @@ app.get("/beers", (req, res) => {
     res.render('beers', {beersFromApi});
   })
   .catch(error => console.log(error));
+  
 })
 
 app.get("/random-beer", (req, res) => {
@@ -35,6 +36,8 @@ app.get("/random-beer", (req, res) => {
   })
   .catch(error => console.log(error));
 })
+
+
 
 
 
