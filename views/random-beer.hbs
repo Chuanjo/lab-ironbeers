@@ -1,10 +1,19 @@
 
  
 {{#each responseFromAPI}}
-  <img src="{{this.image_url}}"  width="100px">
+
+<div id="randombeer-container"> 
+    <div> 
+    <img src="{{this.image_url}}"  width="100px">
+    </div>
+
+    <div id="randombeer-info"> 
     <p>{{this.name}}</p>
     <p>{{this.description}}</p>
     <p>Food Pairing</p>
-<li>{{this.food_pairing}}</li>
+    <li>{{this.food_pairing}}</li>
     <p>{{this.brewers_tips}}</p>
+    </div>
+
+</div>
 {{/each}}
